@@ -1,5 +1,5 @@
 #Name: Michael Gonzales, Emmet Webb, Sean Dippold, David Brown
-##mail: gonzame@mail.uc.edu, webbc7@mail.uc.edu,dippolst@mail.uc.edu
+##mail: gonzame@mail.uc.edu, webbc7@mail.uc.edu,dippolst@mail.uc.edu, brown6dw@mail.uc.edu
 #Assignment Title: Brooks_FinalProject
 #Course: IS 4010
 #Semester/Year: Fall 2023
@@ -10,6 +10,7 @@
 from JsonDataReaderPackage.JsonDataReaderClass import *
 from TextFileExtractorPackage.TextFileExtractorClass import *
 from MessageDecryptorPackage.MessageDecryptorClass import *
+from ImageLoaderPackage.ImageLoaderClass import *
 
 if __name__ == "__main__":
     
@@ -50,3 +51,12 @@ if __name__ == "__main__":
     print(decrypted_message)
     
     #Need Image Processing 
+    #Image Processing
+
+    # Create an instance of the ImageLoader class with the file path
+
+    loader = ImageLoader('BrooksGroupPhoto.jpg')
+
+    # Call the load_image method to load and display the image
+
+    loaded_image = loader.load_image()
